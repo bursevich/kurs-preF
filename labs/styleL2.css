@@ -1,0 +1,43 @@
+.fontClass {
+font-family: Roboto, sans-serif;
+box-sizing: content-box;
+text-align: center;
+}
+.blockElem {
+	margin: 1px 2px 3px 4px;
+}
+.ParentDiv {
+	background-color: blue;
+	text-align: center;
+}
+.childDiv {
+	padding: 50px 50px;
+	width: 20%;
+	display: inline;
+}
+img {
+	float: left;
+	max-height: 500px;
+	padding: 30px;
+}
+a {
+	text-transform: uppercase;
+	color: blue;
+	text-decoration: none;
+	font-size: 25px;
+}
+a:hover {
+	color:red;
+}
+a:visited {
+	color:black;
+}
+a:first-element {
+	color: orange;
+}
+.ourDiv:first-child {
+	color:green;
+}
+.ourDiv:first-letter {
+	color: red;
+}
