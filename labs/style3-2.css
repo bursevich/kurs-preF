@@ -1,0 +1,39 @@
+h1 {
+color: red;
+text-align: center;
+}
+body {
+	font-size: 25px;
+}
+@media screen and (max-width: 700px) {
+h1 {
+color: blue;
+}
+}
+.firstDiv {
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.first {
+	background-color: red;
+	order: 2;
+	flex-basis: 100px;
+	Flex: 1 2 100px;
+	
+}
+.second 
+	 {
+	background-color: yellow;
+	order: 1;
+	flex-basis: 100px;
+	flex-grow:1;
+}
+.third  {
+	background-color: green;
+	order: 0;
+	flex-basis: 100px;
+	flex-grow: 1;
+}
