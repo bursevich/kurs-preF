@@ -11,32 +11,40 @@ body {
 	justify-content: space-between;
 	
 }
-.One, .Two {
-	align-content: center;
-	
-}
+
 .Block {
-	text-align: center;
 	background-color: white;
 	border: 1px solid #a8a8a8;
 	padding: 20px;
 	flex-basis: 260px;
 	height: 160px;
 	position: relative;
-
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 	
-}
-.Block p {
-	position: absolute;
-	top: 30%;
-	left: 30%;
 }
 .Long {
 	flex-basis: 500px; 
 	margin-top: 40px;
-	text-align: left;
+	
 }
-
-.Long:last-child {
-	text-align: right;
+.Block p {
+	align-self: center;
+	
+}
+.One p {
+	align-self: flex-end;
+}
+.Three p {
+	align-self: flex-start;
+}
+.Five {
+	justify-content: flex-end;
+}
+.Four  {
+	justify-content: flex-start;
+}
+.Four p:first-letter {
+	color: red;
 }
