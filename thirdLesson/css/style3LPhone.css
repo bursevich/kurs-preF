@@ -1,4 +1,18 @@
 @media screen and (max-width:500px) {
-	
+	.One { 
+	order: 3;
+	}
+	.Two { 
+	order: 4;
+	}
+	.Three { 
+	order: 2;
+	}
+	.Four { 
+	order: 1;
+	}
+	.Five { 
+	order:0;
+	}
 	
 }

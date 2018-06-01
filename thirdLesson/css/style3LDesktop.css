@@ -7,17 +7,36 @@ body {
 	
 .FlexBox-content {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	
+}
+.One, .Two {
+	align-content: center;
+	
 }
 .Block {
+	text-align: center;
 	background-color: white;
 	border: 1px solid #a8a8a8;
 	padding: 20px;
-	flex-basis: 250px;
-	height: 180px;
+	flex-basis: 260px;
+	height: 160px;
+	position: relative;
+
+	
+}
+.Block p {
+	position: absolute;
+	top: 30%;
+	left: 30%;
 }
 .Long {
-	flex-basis: 450px; 
+	flex-basis: 500px; 
+	margin-top: 40px;
+	text-align: left;
+}
+
+.Long:last-child {
+	text-align: right;
 }
