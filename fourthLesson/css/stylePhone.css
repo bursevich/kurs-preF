@@ -1,0 +1,50 @@
+@media screen and (max-width:400px) {
+	.toprow {
+		flex-flow: column wrap;
+		
+	}
+	.red-green {
+		flex-flow: row-reverse nowrap;
+		width: 100%;
+	}
+	div.second {
+		width: 30%;
+		margin: 5px 0px 5px 13px;
+	}
+	.flexbox p {
+	padding: 22px;
+}
+	div.third {
+		width: 70%;
+		margin: 5px 13px 5px 0px;
+	}
+	.bigblock {
+		flex-flow: column-reverse wrap;
+		width: 100%;
+	}
+	div.fourth {
+		 margin: 5px 0px;
+	  background-color: #ff8000;
+	}
+
+	div.fifth {
+	  margin: 5px 0px;
+	  background-color: #6300ff;
+	  
+	}
+  .bottombox {
+	  flex-flow: row-reverse nowrap;
+	  width: 90%;
+	  justify-content: space-between;
+  }
+   .seventh, .sixth {
+	   width: 50%;
+   }
+   div.seventh {
+	   margin: 5px 13px 5px 0px;
+   }
+	div.sixth {
+		margin: 5px 0px 5px 13px;
+	}
+	
+}

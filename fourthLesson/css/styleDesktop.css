@@ -13,7 +13,7 @@ body {
 	align-items: center;
 	justify-content: center;
 }
- div.second, div.third, div.fourth, div.fifth, div.sixth, div.a4, div.b4, div.c4, div.a5, div.b5, div.c5 {
+ div.second, div.third, div.fourth, div.fifth, div.sixth, div.a4, div.b4, div.c4, div.a5, div.b5, div.c5, div.sixth, div.seventh {
 	border: 1px solid #a89da8;
 	margin: 15px 15px;
 	outline: #d4d4d4 solid 1px;
@@ -91,9 +91,9 @@ div.fourth {
 	align-items: center;
 }
 div.fifth {
-	justify-content: center;
-	align-items: flex-end;
-	padding: 18px 45px;
+	justify-content: space-between;
+	align-items: center;
+    height: 125px;
 }
 .a4 {
 	background-color: #54ffff;
@@ -116,4 +116,14 @@ div.fifth {
 div.a4, div.b4, div.c4 {
 	width: 19%;
 	margin: 10px;
+}
+div.a5, div.b5, div.c5 {
+	width: 12%;
+	margin: 10px;
+}
+div.fifth div.a5 {
+	align-self: flex-start;
+}
+div.fifth div.c5 {
+	align-self: flex-end;
 }
