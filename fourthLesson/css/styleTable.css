@@ -3,7 +3,15 @@
 		flex-direction: column-reverse;
 		justify-content: flex-end;
 	}
-	
+	.sixth {
+	display: block;
+    }
+    .sixth-desk {
+		display: none;
+	}
+	.fifth  {
+		width: 100%;
+	}
 	div.fifth {
 		flex-direction: row-reverse;
 	}

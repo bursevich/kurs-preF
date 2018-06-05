@@ -14,9 +14,9 @@ body {
 	justify-content: center;
 }
  div.second, div.third, div.fourth, div.fifth, div.sixth, div.a4, div.b4, div.c4, div.a5, div.b5, div.c5, div.sixth, div.seventh {
-	border: 1px solid #a89da8;
+	border: 2px solid #a89da8;
 	margin: 15px 15px;
-	outline: #d4d4d4 solid 1px;
+	
 }
 div.second, div.third {
 	margin-left: 0px;
@@ -42,8 +42,8 @@ div.fourth, div.fifth {
 }
 .first {
 	background-color: #ff00ff;
-	border: 1px solid #a89da8;
-	outline: #d4d4d4 solid 1px;
+	border: 2px solid #a89da8;
+	
 	
 }
 .flexbox .first>p {
@@ -70,12 +70,37 @@ div.fourth, div.fifth {
 }
 .fifth {
 	background-color: #6487ff;
+	width: 50%;
+	
+}
+.fifth-row {
+	padding: 0;
+	margin: 0;
+	display: flex;
 }
 .seventh {
 	background-color: #7e7e7e;
+
+	
+}
+div.seventh {
+	margin: 0px 0 15px;
+}
+.sixth, .sixth-desk {
+	background-color: #f2ff4e;
+	
 }
 .sixth {
-	background-color: #f2ff4e;
+	display: none;
+}
+.sixth-desk {
+	display: inline-block;
+	width: 40%;
+	margin: 15px 0 15px 15px;
+	border: 2px solid #a89da8;
+}
+.flexbox .sixth-desk>p {
+	padding: 30px;
 }
 div.fourth, div.fifth {
 	display: flex;
@@ -118,7 +143,7 @@ div.a4, div.b4, div.c4 {
 	margin: 10px;
 }
 div.a5, div.b5, div.c5 {
-	width: 12%;
+	width: 19%;
 	margin: 10px;
 }
 div.fifth div.a5 {
