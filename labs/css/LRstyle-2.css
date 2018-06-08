@@ -1,0 +1,67 @@
+div.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+  }
+  div.mainBlock {
+	  width: 300px;
+	  height: 300px;
+	 /* border: 1px solid black; */
+	  display: flex;
+	  flex-flow: row wrap;
+	  justify-content: space-around;
+	  align-items: center;
+	  animation: mainAn 2s ease-in-out 0s infinite;
+	  /*-webkit-animation: mainAn 2s ease-in-out;*/
+	  
+  }
+  div.mainBlock span {
+	  display: block;
+	  width: 100px;
+	  height: 100px;
+	  border: 5px solid red;
+  }
+	  div.mainBlock span:nth-child(1) {
+		  animation: span1 2s ease-in-out 0s infinite;
+	  }
+	  div.mainBlock span:nth-child(2) {
+		  animation: span2 2s ease-in-out 0s infinite;
+	  }
+	  div.mainBlock span:nth-child(3) {
+		  animation: span3 2s ease-in-out 0s infinite;
+	  }
+	  div.mainBlock span:nth-child(4) {
+		  animation: span4 2s ease-in-out 0s infinite ;
+	  }
+  @keyframes mainAn {
+     0% {transform: rotate(-45deg);}
+	 50% {transform: rotate(-135deg);}
+	 100% {transform: rotate(-225deg);}
+	}
+	@keyframes span1 {
+		0% {transform: translate(0); }
+		50% { transform: translate(75px, 75px);
+		     border-color: blue;}
+		100% {transform: translate(0); }
+	}
+	@keyframes span2 {
+		0% {transform: translate(0); }
+		50% { transform: translate(-75px, 75px);
+		     border-color: yellow;}
+		100% {transform: translate(0); }
+	}
+	@keyframes span3 {
+		0% {transform: translate(0); }
+		50% { transform: translate(75px, -75px);
+		     border-color: green;}
+		100% {transform: translate(0); }
+	}
+	@keyframes span4 {
+		0% {transform: translate(0); }
+		50% { transform: translate(-75px, -75px);
+		     border-color: grey;}
+		100% {transform: translate(0); }
+	}

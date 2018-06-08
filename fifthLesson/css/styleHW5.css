@@ -1,0 +1,51 @@
+div, body {
+	padding: 0;
+	margin: 0;
+}
+div.container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-content: start;
+	margin: 5px;
+	height: 185px;
+	width: 185px;
+}
+div.block {
+	display: inline-block;
+	height: 65px;
+	width: 65px;
+	background-color: red;
+}
+
+div.block {
+	animation: circleColor 3800ms ease-out 0s infinite;
+}
+
+@keyframes circleColor {
+	0% {
+		transform: translate(0px,0px);
+		background-color: red;
+	    
+	}
+	28% {
+		transform: translate(130px, 0px);
+		background-color: yellow;
+		
+	}
+	56% {
+		transform: translate(130px, 130px);
+		background-color: blue;
+	}
+	84% {
+		transform: translate(0px, 130px);
+		background-color: green;
+
+	}
+	100% {transform: translate(0px, 0px);
+	background-color: red;
+}
+	
+}
+	
+		
