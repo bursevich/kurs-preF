@@ -1,0 +1,44 @@
+table {
+	color: #212121;
+	font-family: 'Roboto', sans-serif;
+	background-color: #f5f5f5;
+	font-weight: bold;
+	width: 90%;
+	font-size: 25px;
+	margin: 20px auto;
+	border-spacing: 3.9em 1.5em;
+	
+}
+
+td {
+	background-color: #ffffff;
+	border: 2px solid #a8a8a8;
+	padding: 1.6%;
+	vertical-align: center;
+	text-align: center;
+	height: 120px;
+
+
+}
+
+.verticali td:first-child  {
+	vertical-align: bottom;
+	
+}
+.verticali td:last-child{ 
+   vertical-align: top;
+}
+
+
+.gorizont td {
+text-align: left;
+
+}
+	
+.gorizont td>p:first-letter {
+	color: red;
+}
+.gorizont td:last-child{
+text-align: right;
+color: #212121;
+}

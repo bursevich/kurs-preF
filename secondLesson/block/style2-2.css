@@ -4,15 +4,15 @@ section {
 	background-color: #f5f5f5;
 	font-weight: bold;
 	width: 90%;
-	padding: 50px 40px;
+	padding: 3.66% 2.93%;
 	font-size: 25px;
-	margin: 50px auto;
+	margin: 3.66% auto;
 }
 div {
 	background-color: #ffffff;
 	width: 20%;
 	border: 2px solid #a8a8a8;
-	padding: 20px;
+	padding: 1.6%;
 	text-align: center;
 	height: 120px;
 	display: inline-block;
@@ -28,7 +28,7 @@ span {
 	left: 30%;
 }
 div:nth-child(2n) {
-	margin: 0 14%;
+	margin: 0 13%;
 } 
 div:nth-child(2n) span{
 	top: 40%;
@@ -38,7 +38,7 @@ div:nth-child(3n) span{
 }
 div.tworow {
 	margin: 40px 0 0;
-	width: 39%;
+	width: 38%;
 }
 .tworow:nth-child(2n+1) {
 	float:right;

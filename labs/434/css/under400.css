@@ -1,0 +1,90 @@
+@media screen and (max-width: 400px){
+    div{
+        border: 1px solid gray;
+    }
+    div.mainDiv {
+        display: flex;
+        flex-flow: row wrap;
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        justify-content: space-between;
+        align-content: space-between;
+        border: none;
+    }
+    .green{
+        background: green;
+        width: 30%;
+        order: 2;
+    }
+    .orange{
+        background: orange;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        order: 4;
+    }
+    .red{
+        background: red;
+    width: 60%;
+    order: 1;
+    }
+    .blue{
+        background: blue;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-content: center;
+        order: 3;
+    }
+    .yellow{
+        background: yellow;
+        width: 45%;
+        order: 6;
+    }
+    .grey{
+        background: grey;
+        width: 45%;
+        align-self: flex-end;
+        order: 5;
+    }
+    .green, .orange, .red, .blue, .yellow, .grey{
+        height: 100px;
+        margin-top: 10px;
+    }
+    .inOrange{
+        height: 80%;
+        width: 20px;
+    }
+    .inOrange.orBlue{
+        background: cyan;
+        order: 2;
+    }
+    .inOrange.orGrey{
+        background: whitesmoke;
+    }
+    .inOrange.orRed{
+        background: darkred;
+    }
+    .inBlue{
+        height: 20px;
+        width: 80%;
+        margin: auto;
+    }
+    .inBlue.bPink{
+        background: pink;
+      order: 2;
+    }
+    .inBlue.bGreen{
+        background: darkgreen;
+        order: 0;
+    }
+    .inBlue.bBlack{
+        background: black;
+   
+      order: 1;
+    }
+}
