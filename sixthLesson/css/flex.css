@@ -1,0 +1,139 @@
+body {
+  background-color: #f5f5f5;
+}
+
+@greenBack: #00ff34;
+@greenFont: #00ff37;
+@redBack: #ff1418;
+@redFont: #ff1b1e;
+
+
+.Flexi(@fd: row) {
+  display: flex;
+  flex-direction: @fd;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+p { 
+margin: 0;
+padding: 2px;
+}
+.Block(@fs, @bg, @fc, @ai: center, @jc: center) {
+  height: 120px;
+  font: normal 100% "Roboto", sans-serif;
+  border: 2px solid #888;
+  width: 40%;
+  font-size: @fs;
+  background-color: @bg;
+  color: @fc;
+  align-items: @ai;
+  justify-content: @jc;
+  
+}
+section.container {
+  .Flexi;
+  width: 70%;
+  margin: 10px auto;
+  min-height: 300px; 
+  div.LeftColumn {
+    .Flexi(column);
+    width: 30%;
+    justify-content: space-around;
+    div.FirstBlock {
+      .Flexi(column);
+      .Block(@fs: 32px; @bg: @greenBack; @fc: @redFont);
+      width: 90%;
+    }
+    div.FourthBlock {
+        .Flexi(column);
+        .Block(@fs: 18px; @bg: #00fefe; @fc: @redFont; @ai: flex-end);
+      width: 90%;
+    }
+  }
+  
+  
+  div.RightColumn {
+    .Flexi;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+     div.SecondBlock {
+        .Flexi(column);
+        .Block(@fs: 25px; @bg: @redBack; @fc: @greenFont; @jc: flex-end);
+    }
+    div.ThirdBlock {
+      .Flexi(column);
+      .Block(@fs: 21px; @bg: #0000fa; @fc: @greenFont; @jc: flex-start; @ai: flex-end); 
+      &Italic {
+        font-style: italic;
+      }
+    }
+    div.FourthBlock {
+      .Flexi(column);
+      .Block(@fs: 21px; @fc: #ff00fb; @bg: @greenBack; @ai: flex-end);
+      &Bold {
+        font-weight: bold;
+      }
+      p {
+        padding-right: 8px;
+      }
+    }
+    div.FifthBlock {
+      .Flexi(column);
+      .Block(@fs: 39px; @fc: @greenFont; @bg: @redBack);
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .FDmini(@wm: 100%) {
+    flex-direction: column;
+    width: @wm;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+  }
+  .BlockMini(@fsm: 24px) {
+    align-items: center;
+    justify-content: center;
+    font-size: @fsm;
+    margin-bottom: 10px;
+  }
+	section.container {
+		.FDmini(@wm: 80%);
+   
+    div.LeftColumn {
+      .FDmini;
+      div.FirstBlock {
+        .FDmini;
+        .BlockMini(@fsm: 31px);
+      }
+      div.FourthBlock {
+        .FDmini;
+        .BlockMini(@fsm: 17px);
+      }
+    }
+    
+    div.RightColumn {
+      .FDmini;
+      div.SecondBlock {
+        .FDmini(@wm: 100%);
+        .BlockMini(@fsm: 27px);
+      }
+      div.ThirdBlock {
+        .FDmini;
+        .BlockMini;
+      }
+      div.FourthBlock {
+        .FDmini;
+        .BlockMini;
+      }
+      div.FifthBlock {
+         .FDmini;
+        .BlockMini(@fsm: 36px);
+      }
+    }
+	}
+ 
+  
+}
