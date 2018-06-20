@@ -1,2 +1,38 @@
 @media screen and (max-width: 800px) {
+	div.Lime {
+		order: 2;
+	}
+	div.Orange {
+		order: 1;
+		flex-direction: row-reverse;
+	}
+	div.Red {
+		order: 0;
+	}
+	div.DarkBlue {
+		order: 3;
+		width: 76%;
+		margin-right: 0;
+		flex-direction: row-reverse;
+	}
+	div.Yellow {
+		order: 4;
+		width: 100%;
+	}
+	section div.Yellow p {
+		padding: 0.7% 0.5%;
+	}
+	div.BigPurple p {
+		padding: 0.5% 0.5%;
+	}
+	div.Grey {
+		order: 5;
+	}
+	div.Blue, div.LightGrey, div.Brown, div.Purple, div.Green, div.Black {
+    width: 17%;
+	height: 25%;
+	}
+	
+		
 }
+ 
