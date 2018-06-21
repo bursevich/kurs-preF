@@ -1,5 +1,50 @@
-@import url(styleHM7-xl.css);
-@import url(styleHM7-lg.css);
-@import url(styleHM7-md.css);
-@import url(styleHM7-sm.css);
-@import url(styleHM7-xs.css);
+div.container-fluid {
+	background-color: #f5f5f5;	
+	padding: 5px 20px;
+	
+}
+div.pad {
+
+	padding: 5px;
+}
+div.Block {
+	border: 1px solid #898788;
+	height: 4.5em;
+	padding-left: 0px;
+	padding-right: 0px;
+	
+	/* margin: 0.1em; */
+	
+}
+div.darkgreen {
+	background-color: #008040;
+}
+div.turquoise {
+	background-color: #00fe81;
+}
+div.red {
+	background-color: #fe0000;
+}
+div.pink {
+	background-color: #ff0080;
+	
+}
+div.green {
+	background-color: #3f8000;
+}
+div.blue {
+	background-color: #0000fe;
+}
+div.yellow {
+	background-color: #ffff01;
+}
+
+div.orange {
+	background-color: #ff7f00;
+}
+div.violet {
+	background-color: #7f00ff;
+}
+div.lime {
+	background-color: #00ff01;
+}
